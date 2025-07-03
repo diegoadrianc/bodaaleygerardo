@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="progress">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Nuestra Boda</title>
+
+
+
+</head>
+<body>
+
+    <header class="header inicio" transition-style="in:wipe:right">
+        <div  class="contenedor contenido-header">
+            <div class="barra">
+              <!--<a href="index.html" class="abrir">Cerrar Invitacion</a> -->
+            </div>
+            <p class="shadowt shadowp">
+              Alejandra y Gerardo <p>
+                <div class="countdown-timer">
+                  <ul class="countdown-timer-ul">
+
+                      <div class="countainer-ul">
+                          <li class="date-item"><span id="days" class="days">0</span>Dias</li>
+                          <li class="date-item"><span id="hours" class="hours">0</span>Horas</li>
+                          <li class="date-item"><span id="minutes" class="minutes">0</span>Minutos</li>
+                          <li class="date-item"><span id="seconds" class="seconds">0</span>Segundos</li>
+                      </div>
+
+                    </ul>
+                  </div>
+
+                  <p class="shadowp">18 de Julio del 2025</p>
+        </div>
+
+    </header>
+    <main class="fondog" transition-style="in:wipe:right">
+    <h2>Este es el comienzo de Nuestra Historia</h2>
+        <section class="gallery seccion">
+          <p class="carrusel">“Amar no es mirarse el uno al otro, es mirar juntos en la misma dirección” <br> – Antoine de Saint-Exupéry</p>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="Imagenes/image11.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Imagenes/image2.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Imagenes/image3.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Imagenes/image4.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Imagenes/image5.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Imagenes/image7.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Imagenes/image8.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Imagenes/image9.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Imagenes/image10.jpeg" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+            </section>
+
+
+    <p class="info"><span>Por favor tomar en cuenta los siguientes aspectos...</span></p>
+    <section id="smodal" class="seccion">
+
+
+      <div class="contenedor">
+
+      <div class="contenedor-noticias">
+         <div class="noticia" data-aos="fade-up"
+         data-aos-duration="3000">
+             <picture>
+                 <source srcset="Imagenes/formal.webp" type="image/webp">
+                 <source srcset="Imagenes/formal.jpg" type="image/jpeg">
+                 <img loading="lazy" src="img/formal.jpg" alt="noticia 1">
+             </picture>
+
+             <div class="contendio-noticia">
+                 <h3><span>Código de Vestimenta</span></h3>
+                 <p>Prepárense para una boda llena de colores, así que dejale el color blanco a la novia.</p>
+                 <p > Click en el botón para más detalles.</p>
+                  <button  id="vestimenta">Mas Detalles</button>
+                 <!--<a id="vestimenta" href="" class="boton-amarillo-block">
+                     Ver Mas
+                  </a>-->
+             </div><!--, conenido noticia-->
+         </div><!--, noticia-->
+         <div class="noticia" data-aos="fade-up"
+         data-aos-duration="3000">
+             <picture>
+                 <source srcset="Imagenes/baile.webp" type="image/webp">
+                 <source srcset="img/baile.jpg" type="image/jpeg">
+                 <img loading="lazy" src="Imagenes/baile.jpg" alt="anuncio">
+             </picture>
+
+             <div class="contendio-noticia">
+                 <h3>No se permite la entrada a Niños</h3>
+                 <p>Queremos disfrutar de esta fiesta en un ambiente para adultos.</p>
+                 <p class="fecha"></p>
+
+                 <a href="" class="">
+
+                  </a>
+             </div><!--, conenido noticia-->
+         </div><!--, noticia-->
+         <div class="noticia" data-aos="fade-up"
+         data-aos-duration="3000">
+             <picture>
+                 <source srcset="Imagenes/Mesas-de-regalos.webp" type="image/webp">
+                 <source srcset="Imagenes/Mesas-de-regalos.jpg" type="image/jpeg">
+                 <img loading="lazy" src="img/Mesas-de-regalos.jpg" alt="anuncio">
+             </picture>
+
+             <div class="contendio-noticia">
+                 <h3>Mesa de regalos</h3>
+                 <p>Su presencia es nuestro mejor regalo, pero si aún así desea contribuir a nuestra futura vida, podrán realizarlo en efectivo colocándole en un pequeño sobre.</p>
+                 <p class="fecha"></p>
+
+                 <!--<button>Mas Detalles</button>-->
+             </div><!--, conenido noticia-->
+         </div><!--, noticia-->
+      </div><!--, contenedor de noticias-->
+    </div>
+      <div class="alinear-derecha">
+         <a href="" class="">
+
+          </a>
+      </div>
+ </section>
+ <h2>Itinerario</h2>
+ <section class="fondoh seccion" >
+
+  <div class="contenedor-horario" >
+    <div class="contenido-horario">
+
+      <i class="fa-solid fa-church"></i>
+
+    </div>
+
+    <div class="contenido-horario " >
+      <h3>Ceremonia Religiosa</h3>
+      <h3>Hora: 5:30pm</h3>
+      <p>La ceremonia religiosa se llevará a cabo en el Santuario de la Vigen de Guadalupe.</p>
+    </div>
+
+
+
+
+    <div class="contenido-horario">
+      <i class="fa-solid fa-bell-concierge"></i>
+
+    </div>
+    <div class="contenido-horario">
+      <h3>Civil</h3>
+      <h3>Hora: 07:30 pm</h3>
+      <h3>Recepción</h3>
+      <h3>Hora: 08:30 pm</h3>
+      <p>Se realizará el acomodo en mesas a las ocho en punto.</p>
+    </div>
+  </div>
+</section>
+<h2>Ubicación</h2>
+<section class="seccion contenedor">
+
+  <div class="contenedor-ubicacion">
+   <div class="ubicacion" >
+    <div class="contendio-ubicacion">
+
+            <h3>Iglesia Santuario de la Vigen de Guadalupe</h3>
+            <p>Dirección</p>
+            <p>Calle Gral. Manuel Perez Treviño #425, Zona Centro, Saltillo.</p>
+            <p>Ceremonia Religiosa</p>
+            <p>5:30 pm</p>
+         <div class="enlace">
+            <a class="boton-ubicacion" href="https://maps.app.goo.gl/LvKJgkv8oMeybb4t7">ubicación</a>
+         </div>
+    </div>
+    </div>
+
+    <div class="ubicacion">
+      <div class="contendio-ubicacion">
+
+              <h3>Salon El Cortijo</h3>
+              <p>Dirección</p>
+              <p>Paseo del Cortijo 1102 , Fraccionamiento Lomas de Lourdes, Saltillo.</p>
+
+              <p>8:00 pm</p>
+
+              <div class="enlace">
+                <a class="boton-ubicacion" href="https://maps.app.goo.gl/JaJnTnTC81DUQ7qZA?g_st=iw">ubicación</a>
+             </div>
+      </div>
+      </div>
+
+  </div>
+
+</section>
+  <h2>Asistencia</h2>
+<section class="imagen-recomendaciones seccion">
+  <p class="asistencia">Te pedimos confirmar tu asistencia por medio de WhatsApp</p>
+  <a class="boton-whatsapp" href=https://api.whatsapp.com/send/?phone=528448070984><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+</section>
+<h2>Música</h2>
+ <section class="seccion">
+
+    <div class="audio">
+      <p>Regalo de Dios (Piano Version)</p>
+      <audio controls="controls" src="mp3/Regalo de Dios (Piano Version) - El Piano de México (Audio Oficial).MP3" autoplay></audio>
+    </div>
+ </section>
+</main>
+
+    <script src="build/js/bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+         var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+      </script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          },2000, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+    <body>
+      <div id="cuenta"></div>
+      <script>
+
+
+//===
+// VARIABLES
+//===
+const DATE_TARGET = new Date('07/19/2025 0:01 AM');
+// DOM for render
+const SPAN_DAYS = document.querySelector('span#days');
+const SPAN_HOURS = document.querySelector('span#hours');
+const SPAN_MINUTES = document.querySelector('span#minutes');
+const SPAN_SECONDS = document.querySelector('span#seconds');
+// Milliseconds for the calculations
+const MILLISECONDS_OF_A_SECOND = 1000;
+const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
+const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
+const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+
+//===
+// FUNCTIONS
+//===
+
+/**
+ * Method that updates the countdown and the sample
+ */
+function updateCountdown() {
+    // Calcs
+    const NOW = new Date()
+    const DURATION = DATE_TARGET - NOW;
+    const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+    const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
+    const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
+    const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+    // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+
+    // Render
+    SPAN_DAYS.textContent = REMAINING_DAYS;
+    SPAN_HOURS.textContent = REMAINING_HOURS;
+    SPAN_MINUTES.textContent = REMAINING_MINUTES;
+    SPAN_SECONDS.textContent = REMAINING_SECONDS;
+}
+
+//===
+// INIT
+//===
+updateCountdown();
+// Refresh every second
+setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+
+
+        </script>
+        <script>
+          (function(){var a=document.createElement("link");a.rel="stylesheet";a.href="https://unpkg.com/transition-style";document.head.append(a);})();
+          $('body').setAttribute('transition-style','wipe-cinematic-in')
+      </script>
+      </body>
+</body>
+</html>
